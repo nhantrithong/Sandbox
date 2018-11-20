@@ -1,5 +1,5 @@
 def main():
-    score = float(input("Enter your score: "))
+    score = get_score()
     while score < 0 or score > 100:
         print("Invalid score, please re-enter an appropriate value")
         score = float(input("Enter your score: "))
@@ -10,5 +10,11 @@ def main():
     else:
         print("This is an excellent score")
     main()
+
+
+def get_score():
+    score = float(input("Enter your score: "))
+    return score
+
 
 main()
